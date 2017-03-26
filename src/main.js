@@ -3,7 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+const FastClick = require('fastclick')
+FastClick.attach(document.body)
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
