@@ -83,7 +83,8 @@ import {
   TabbarItem,
   Card,
   Panel,
-  Cell
+  Cell,
+  Group
 } from 'vux'
 export default {
   components: {
@@ -95,7 +96,8 @@ export default {
     TabbarItem,
     Card,
     Panel,
-    Cell
+    Cell,
+    Group
   },
   methods: {
     go(name) {
@@ -108,25 +110,25 @@ export default {
       icon: '&#xe603;',
       list: [{
         url: '/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
-        img: '/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
+        img: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
         title: '如何手制一份秋意的茶？'
       }, {
         url: 'http://mp.weixin.qq.com/s?__biz=MzAxNjU0MDYxMg==&ampmid=400160890&ampidx=1&ampsn=29ef02af25793a11a3f6aec92bfb46c1&ampscene=19#wechat_redirect',
-        img: '/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
+        img: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
         title: '茶包VS原叶茶'
       }, {
         url: 'http://mp.weixin.qq.com/s?__biz=MzAxNjU0MDYxMg==&ampmid=400094682&ampidx=1&ampsn=8231a2053b772b2108784fccc254d28c&ampscene=19#wechat_redirect',
-        img: '/assets/n_v1bl2lwkpbywtfqal26nyq.jpg',
+        img: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwkpbywtfqal26nyq.jpg',
         title: '播下茶籽，明春可发芽？'
       }],
       pannel_type: '1',
       pannel_list: [{
-        src: 'http://placeholder.qiniudn.com/60x60/3cc51f/ffffff',
+        src: '//wgbbiao.github.io/ehuishou/static/assets/5716d10f74085.jpg',
         title: '标题一',
         desc: '由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。',
         url: '/component/cell'
       }, {
-        src: 'http://placeholder.qiniudn.com/60x60/3cc51f/ffffff',
+        src: '//wgbbiao.github.io/ehuishou/static/assets/131224632522665935.jpg',
         title: '标题二',
         desc: '由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。',
         url: {
