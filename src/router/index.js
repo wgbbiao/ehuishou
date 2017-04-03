@@ -7,6 +7,9 @@ import UserAddress from '@/components/user/address'
 import UserAddAddr from '@/components/user/add_addr'
 import UserOrderList from '@/components/user/order_list'
 import SecondHandList from '@/components/secondhand/list'
+import SecondHandDetail from '@/components/secondhand/detail'
+import NewsList from '@/components/news/list'
+import NewsDetail from '@/components/news/detail'
 
 Vue.use(Router)
 
@@ -35,5 +38,17 @@ export default new Router({
     path: '/secondhand/list',
     name: 'SecondHandList',
     component: SecondHandList
+  }, {
+    path: '/secondhand/detail/:id',
+    name: 'SecondHandDetail',
+    component: SecondHandDetail
+  }, {
+    path: '/news/list',
+    name: 'NewsList',
+    component: NewsList
+  }, {
+    path: '/news/detail/:id',
+    name: 'NewsDetail',
+    component: NewsDetail
   }]
 })
