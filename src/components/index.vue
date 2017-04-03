@@ -2,62 +2,49 @@
   <div>
     <swiper :list="list" auto></swiper>
     <flexbox>
-      <flexbox-item @click.native="go('home')">
+      <flexbox-item @click.native="go('/trash/order')">
         <div class="cbox-menu">
           <span class="iconfont icon-huishouchexian"></span>
           <br>
-          <span class="cname">废品回收</span>
+          <span class="cname">一键回收</span>
         </div>
       </flexbox-item>
-      <flexbox-item>
+      <flexbox-item @click.native="go('/trash/order')">
         <div class="cbox-menu">
-          <span class="iconfont icon-chouyouyanji col_3"></span>
+          <span class="iconfont icon-hongbao col_3"></span>
           <br>
-          <span class="cname">家电清洗</span>
+          <span class="cname">红包奖励</span>
+          <!-- 参与分类  -->
         </div>
       </flexbox-item>
-      <flexbox-item>
+      <flexbox-item @click.native="go('/secondhand/list')">
         <div class="cbox-menu">
-          <span class="iconfont icon-weixiu"></span>
+          <span class="iconfont icon-feipinhuishou"></span>
           <br>
-          <span class="cname">手机维修</span>
-        </div>
-      </flexbox-item>
-      <flexbox-item>
-        <div class="cbox-menu">
-          <span class="iconfont icon-youpinwangtubiao- col_1"></span>
-          <br>
-          <span class="cname">窗帘清洗</span>
+          <span class="cname">二手交易</span>
         </div>
       </flexbox-item>
     </flexbox>
     <flexbox>
-      <flexbox-item>
+      <flexbox-item @click.native="go('/news/list')">
         <div class="cbox-menu">
-          <span class="iconfont icon-shop col_2"></span>
+          <span class="iconfont icon-zixun col_1"></span>
           <br>
-          <span class="cname">家电回收</span>
+          <span class="cname">环保资讯</span>
         </div>
       </flexbox-item>
-      <flexbox-item>
+      <flexbox-item @click.native="go('/game/list')">
         <div class="cbox-menu">
-          <span class="iconfont icon-shuma"></span>
+          <span class="iconfont icon-youxi col_2"></span>
           <br>
-          <span class="cname">数码回收</span>
+          <span class="cname">寓教娱乐</span>
         </div>
       </flexbox-item>
-      <flexbox-item>
+      <flexbox-item @click.native="go('/shop')">
         <div class="cbox-menu">
-          <span class="iconfont icon-chuwei col_1"></span>
+          <span class="iconfont icon-jifenshangcheng"></span>
           <br>
-          <span class="cname">厨卫清洁</span>
-        </div>
-      </flexbox-item>
-      <flexbox-item>
-        <div class="cbox-menu">
-          <span class="iconfont icon-baoji"></span>
-          <br>
-          <span class="cname">浓度保洁</span>
+          <span class="cname">积分商城</span>
         </div>
       </flexbox-item>
     </flexbox>
@@ -87,6 +74,7 @@ import {
   Group
 } from 'vux'
 export default {
+  name: 'Home',
   components: {
     Swiper,
     Flexbox,
@@ -101,7 +89,6 @@ export default {
   },
   methods: {
     go(name) {
-      console.log(name)
       this.$router.push(name)
     }
   },
@@ -177,7 +164,7 @@ export default {
 }
 
 .cbox-menu .iconfont.col_3 {
-  background: #660033
+  background: #990000
 }
 
 .cbox-menu {
