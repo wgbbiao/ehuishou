@@ -12,11 +12,11 @@
           <span slot="icon" class="iconfont icon-feipinhuishou"></span>
           <span slot="label">卖废品</span>
         </tabbar-item>
-        <tabbar-item link="/component/demo">
+        <tabbar-item link="/news/list">
           <span slot="icon" class="iconfont icon-4"></span>
           <span slot="label">资讯</span>
         </tabbar-item>
-        <tabbar-item>
+        <tabbar-item link="/user">
           <span slot="icon" class="iconfont icon-wode"></span>
           <span slot="label">我</span>
         </tabbar-item>

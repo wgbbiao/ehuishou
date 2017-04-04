@@ -6,10 +6,16 @@ import TrashOrder from '@/components/order'
 import UserAddress from '@/components/user/address'
 import UserAddAddr from '@/components/user/add_addr'
 import UserOrderList from '@/components/user/order_list'
+import UserSubscribeList from '@/components/user/subscribe_list'
 import SecondHandList from '@/components/secondhand/list'
 import SecondHandDetail from '@/components/secondhand/detail'
 import NewsList from '@/components/news/list'
 import NewsDetail from '@/components/news/detail'
+import GameList from '@/components/game/list'
+import GameDetail from '@/components/game/detail'
+import UserIndex from '@/components/user/index'
+import ShopIndex from '@/components/shop/index'
+import ShopList from '@/components/shop/list'
 
 Vue.use(Router)
 
@@ -50,5 +56,29 @@ export default new Router({
     path: '/news/detail/:id',
     name: 'NewsDetail',
     component: NewsDetail
+  }, {
+    path: '/game/list',
+    name: 'GameList',
+    component: GameList
+  }, {
+    path: '/game/detail/:id',
+    name: 'GameDetail',
+    component: GameDetail
+  }, {
+    path: '/user',
+    name: 'UserIndex',
+    component: UserIndex
+  }, {
+    path: '/user/subscribe_list',
+    name: 'UserSubscribeList',
+    component: UserSubscribeList
+  }, {
+    path: '/shop',
+    name: 'ShopIndex',
+    component: ShopIndex
+  }, {
+    path: '/shop/list',
+    name: 'ShopList',
+    component: ShopList
   }]
 })

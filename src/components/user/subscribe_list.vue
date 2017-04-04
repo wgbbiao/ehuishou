@@ -1,6 +1,6 @@
 <template>
   <div>
-    <group title="订单列表">
+    <group title="预约列表">
       <cell v-for="order in orders" :title="order.date +'的预约'" is-link :value="isFinish(order.is_finish)" :key="order.id"></cell>
     </group>
 
