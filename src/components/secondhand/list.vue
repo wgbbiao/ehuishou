@@ -1,5 +1,19 @@
 <template>
-  <panel header="二手交易列表" :list="results" type="1"></panel>
+  <div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd">二手交易列表</div>
+    <div class="weui-panel__bd">
+      <router-link :to="item.url" v-for="item in results" :key="item.id" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd" v-if="item.src">
+          <img class="weui-media-box__thumb" :src="item.src" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+          <h4 class="weui-media-box__title">{{item.title}}</h4>
+          <p class="weui-media-box__desc">{{item.desc}}</p>
+          <div class="secondhan_price">￥{{item.price}}</div>
+        </div>
+      </router-link>
+    </div>
+  </div>
 </template>
 <script type="text/javascript">
 import {
@@ -58,4 +72,11 @@ export default {
 }
 
 </script>
+
+<style type="text/css">
+.secondhan_price  {
+  color: red;
+}
+
+</style>
 

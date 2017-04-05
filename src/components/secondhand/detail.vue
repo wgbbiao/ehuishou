@@ -4,6 +4,7 @@
       <img slot="header" src="//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg" style="width:100%;display:block;">
       <div slot="content" class="card-padding">
         <h3>8成新IPHONE</h3>
+        <div class="secondhan_price">￥123234</div>
       </div>
     </card>
     <card :header="{title:'商品描述'}">
@@ -11,7 +12,7 @@
     </card>
     <group slot="content" title="联系方式">
       <cell title="地址" value="北京市西城区xx小区xx号楼"></cell>
-      <cell title="电话" value="tel:13466625911"></cell>
+      <cell title="电话"><a href="tel:13466625911">13466625911</a></cell>
     </group>
   </div>
 </template>

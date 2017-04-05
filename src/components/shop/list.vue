@@ -1,6 +1,20 @@
 <template>
   <div>
-    <panel :header="header" :list="prolist" type="1"></panel>
+    <div class="weui-panel weui-panel_access">
+      <div class="weui-panel__hd" v-html="header"></div>
+      <div class="weui-panel__bd">
+        <router-link :to="item.url" v-for="item in prolist" :key="item.id" class="weui-media-box weui-media-box_appmsg">
+          <div class="weui-media-box__hd" v-if="item.src">
+            <img class="weui-media-box__thumb" :src="item.src" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <h4 class="weui-media-box__title">{{item.title}}</h4>
+            <p class="weui-media-box__desc">{{item.desc}}</p>
+            <div class="secondhan_price">￥{{item.price}}</div>
+          </div>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 <script type="text/javascript">
@@ -29,32 +43,38 @@ export default {
         title: '中在在夫有枯霜地',
         desc: '中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地.',
         src: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
-        url: '/game/detail/1'
+        url: '/shop/detail/1',
+        price: 123
       }, {
         title: '中在在夫有枯霜地',
         desc: '中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地.',
         src: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
-        url: '/game/detail/1'
+        url: '/shop/detail/1',
+        price: 123
       }, {
         title: '中在在夫有枯霜地',
         desc: '中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地.',
         src: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
-        url: '/game/detail/1'
+        url: '/shop/detail/1',
+        price: 123
       }, {
         title: '中在在夫有枯霜地',
         desc: '中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地.',
         src: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
-        url: '/game/detail/1'
+        url: '/shop/detail/1',
+        price: 123
       }, {
         title: '中在在夫有枯霜地',
         desc: '中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地.',
         src: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
-        url: '/game/detail/1'
+        url: '/shop/detail/1',
+        price: 123
       }, {
         title: '中在在夫有枯霜地',
         desc: '中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地,中在在夫有枯霜地.',
         src: '//wgbbiao.github.io/ehuishou/static/assets/n_v1bl2lwxu3bo2fq55vnjha.jpg',
-        url: '/game/detail/1'
+        url: '/shop/detail/1',
+        price: 123
       }]
     }
   },
