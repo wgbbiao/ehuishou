@@ -16,9 +16,8 @@ import GameDetail from '@/components/game/detail'
 import UserIndex from '@/components/user/index'
 import ShopIndex from '@/components/shop/index'
 import ShopList from '@/components/shop/list'
-
+import Register from '@/components/user/Register'
 Vue.use(Router)
-
 export default new Router({
   routes: [{
     path: '/',
@@ -80,5 +79,9 @@ export default new Router({
     path: '/shop/list',
     name: 'ShopList',
     component: ShopList
+  }, {
+    path: '/user/register',
+    name: 'Register',
+    component: Register
   }]
 })

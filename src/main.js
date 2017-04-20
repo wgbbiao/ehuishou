@@ -6,10 +6,12 @@ import router from './router'
 const FastClick = require('fastclick')
 FastClick.attach(document.body)
 import VueRouter from 'vue-router'
+import axios from 'axios'
 Vue.use(VueRouter)
 Vue.config.productionTip = false
-
-/* eslint-disable no-new */
+Vue.use(axios)
+Vue.prototype.$http = axios
+  /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
